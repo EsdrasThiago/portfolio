@@ -10,6 +10,30 @@ header {
   justify-content: space-around;
 }
 
-.selected {
-  text-decoration: underline;
+header div {
+  display: flex;
+  flex-direction: column;
+}
+
+header hr {
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.main_conhecimentos div {
+  display: flex;
+  justify-content: center;
+}
+
+.main_conhecimentos h2 {
+  margin-left: 20px;
+}
+
+.about__main img {
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  margin-top: 20px;
 }

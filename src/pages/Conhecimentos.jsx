@@ -3,32 +3,32 @@ import { conhecimentos } from "../mocks/conhecimentos";
 
 function Conhecimentos() {
   return (
-    <div>
-      <Header/>
-      Linguagens:
-      <ul>
+    <div className="main_conhecimentos">
+      <Header />
+      <h1>Linguagens: </h1>
+      <div>
         {conhecimentos.linguagens.map((linguagem) => (
-          <li key={linguagem.name + linguagem.level}>{linguagem.name} / {linguagem.level} - 5</li>
+          <h2 key={linguagem.name + linguagem.level}>{linguagem.name}</h2>
         ))}
-      </ul>
-      Frontend:
-      <ul>
-      {conhecimentos.frontend.map((linguagem) => (
-          <li key={linguagem.name + linguagem.level}>{linguagem.name} / {linguagem.level} - 5</li>
+      </div>
+      <h1>Frontend: </h1>
+      <div>
+        {conhecimentos.frontend.map((linguagem) => (
+          <h2 key={linguagem.name + linguagem.level}>{linguagem.name}</h2>
         ))}
-      </ul>
-      Backend:
-      <ul>
-      {conhecimentos.backend.map((linguagem) => (
-          <li key={linguagem.name + linguagem.level}>{linguagem.name} / {linguagem.level} - 5</li>
+      </div>
+      <h1>Backend: </h1>
+      <div>
+        {conhecimentos.backend.map((linguagem) => (
+          <h2 key={linguagem.name + linguagem.level}>{linguagem.name}</h2>
         ))}
-      </ul>
-      Testes:
-      <ul>
-      {conhecimentos.testes.map((linguagem) => (
-          <li key={linguagem.name + linguagem.level}>{linguagem.name} / {linguagem.level} - 5</li>
+      </div>
+      <h1>Testes: </h1>
+      <div>
+        {conhecimentos.testes.map((linguagem) => (
+          <h2 key={linguagem.name + linguagem.level}>{linguagem.name}</h2>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

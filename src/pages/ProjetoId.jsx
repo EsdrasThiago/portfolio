@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { projetos } from "../mocks/projetos";
 import { useParams } from "react-router-dom";
+import Header from "../components/Header";
 
 function ProjetoId() {
   const [projeto, setProjeto] = useState();
@@ -13,6 +14,7 @@ function ProjetoId() {
 
   return (
     <main>
+      <Header />
       {projeto && <div>
       <img src={projeto.imagem} alt={projeto.nome} />
       <h2>Link da aplicacao</h2>

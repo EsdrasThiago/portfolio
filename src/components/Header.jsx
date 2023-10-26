@@ -22,6 +22,10 @@ function Header() {
     }
   }, [])
 
+  useEffect(() => {
+    
+  })
+
   const conhecimentosButton = () => {
     navigate("/conhecimentos")
   }
@@ -35,10 +39,19 @@ function Header() {
   }
 
   return (
-    <header>
-      <button type="button" className={conhecimentosSelected} onClick={conhecimentosButton}>Conhecimentos</button>
-      <button type="button" className={sobreMimSelected} onClick={sobreMimButton}>Sobre mim</button>
-      <button type="button" className={projetosSelected} onClick={projetosButton}>Projetos</button>
+    <header className="header__main">
+      <div>
+        <button type="button" onClick={conhecimentosButton}>Conhecimentos</button>
+        {conhecimentosSelected !== "" && <hr />}
+      </div>
+      <div>
+        <button type="button" onClick={sobreMimButton}>Sobre mim</button>
+        {sobreMimSelected !== "" && <hr />}
+      </div>
+      <div>
+        <button type="button" onClick={projetosButton}>Projetos</button>
+        {projetosSelected !== "" && <hr />}
+      </div>
     </header>
   )
 }

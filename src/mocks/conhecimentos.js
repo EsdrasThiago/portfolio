@@ -51,7 +51,7 @@ export const conhecimentos = {
       level: 3
     },
     {
-      name: 'React Testing Library',
+      name: 'RTL',
       level: 4
     }
   ]

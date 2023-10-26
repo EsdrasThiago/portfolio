@@ -2,7 +2,7 @@ import Header from "../components/Header";
 
 function SobreMim() {
   return (
-    <div>
+    <div className="about__main">
       <Header />
       <img src="https://i.pinimg.com/736x/b0/96/93/b09693d201fbf41d7cbff69455fd0f20.jpg" alt="kang"/>
       <h1>Esdras Thiago</h1>
