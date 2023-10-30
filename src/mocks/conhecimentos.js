@@ -7,6 +7,10 @@ export const conhecimentos = {
     {
       name: 'Typescript',
       level: 3
+    },
+    {
+      name: 'Java',
+      level: 3
     }
   ],
   frontend: [

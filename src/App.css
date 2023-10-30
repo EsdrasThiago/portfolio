@@ -17,18 +17,31 @@ header div {
 
 header hr {
   width: 100px;
-  height: 2px;
   background-color: white;
-  border-radius: 2px;
+  animation-name: header_underline;
+  animation-duration: 2s;
+}
+
+.main_conhecimentos {
+  animation-name: slide;
+  animation-duration: 2s;
 }
 
 .main_conhecimentos div {
   display: flex;
   justify-content: center;
+  /* width: 100vw; */
+  height: 10vh;
 }
 
-.main_conhecimentos h2 {
+.main_conhecimentos h3 {
   margin-left: 20px;
+  transition: 5s;
+}
+
+.about__main {
+  animation-name: slide;
+  animation-duration: 2s;
 }
 
 .about__main img {
@@ -36,4 +49,23 @@ header hr {
   height: 500px;
   border-radius: 25px;
   margin-top: 20px;
+  transition: 5s;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes header_underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
 }
